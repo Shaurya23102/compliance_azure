@@ -19,15 +19,12 @@ The workflow is orchestrated as a LangGraph graph (`START → Indexer → Audito
 | Component            | Technology                                  |
 |-----------------------|----------------------------------------------|
 | Orchestration          | LangGraph, LangChain                       |
-| LLM Inference           | Groq (via `langchain-groq`), OpenAI-compatible (`langchain-openai`) |
+| LLM Inference           | Groq (via `langchain-groq`) |
 | Embeddings              | HuggingFace / Sentence-Transformers        |
 | Retrieval / Indexing    | Azure AI Search (`azure-search-documents`) |
 | Cloud / Auth             | Azure Identity, Azure Monitor (OpenTelemetry), Azure Storage Blob |
 | Video ingestion           | `yt-dlp`                                  |
-| Web scraping (rules etc.) | Firecrawl                                 |
 | API                        | FastAPI, Uvicorn                          |
-| Data / Storage               | PostgreSQL (`psycopg2`), SQLAlchemy, Redis, Pandas |
-| UI (optional)                  | Streamlit                              |
 | Language                          | Python 3.12+                        |
 
 ## Project Structure
